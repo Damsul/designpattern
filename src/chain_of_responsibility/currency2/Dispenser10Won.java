@@ -1,0 +1,24 @@
+package chain_of_responsibility.currency2;
+
+public class Dispenser10Won implements DispenserChain {
+    private DispenserChain dispenserChain;
+    @Override
+    public DispenserChain setNext(DispenserChain dispenser) {
+        this.dispenserChain = dispenser;
+        return dispenser;
+    }
+
+    @Override
+    public void dispense(Currency currency) {
+        if (currency.getAmount() >= 10) {
+            int cnt = currency.getAmount() / 10;
+            int remainder = currency.getAmount() % 10;
+            System.out.println("10원 : " + cnt + "개");
+            if (remainder != 0) {
+                this.dispenserChain.dispense(new Currency(remainder));
+            }
+        } else {
+            this.dispenserChain.dispense(currency);
+        }
+    }
+}
