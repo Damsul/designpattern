@@ -1,5 +1,6 @@
 package builder.pizza;
 
+// GOF Builder Pattern 과 Lombok builder ㅡ랑은 다름
 public class PizzaBuilder {
 
     private final String name;
