@@ -1,6 +1,4 @@
-package builder;
-
-import builder.PizzaBuilder;
+package builder.pizza;
 
 public class Main {
 

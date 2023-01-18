@@ -1,4 +1,4 @@
-package builder;
+package builder.pizza;
 
 public class PizzaBuilder {
 
@@ -7,6 +7,14 @@ public class PizzaBuilder {
     private final String sauce;
     private final String topping;
     private final int price;
+
+    public PizzaBuilder(Builder builder) {
+        this.name = builder.name;
+        this.dough = builder.dough;
+        this.sauce = builder.sauce;
+        this.topping = builder.topping;
+        this.price = builder.price;
+    }
 
 
     public static class Builder {
@@ -50,14 +58,6 @@ public class PizzaBuilder {
         public PizzaBuilder build() {
             return new PizzaBuilder(this);
         }
-    }
-
-    public PizzaBuilder(Builder builder) {
-        this.name = builder.name;
-        this.dough = builder.dough;
-        this.sauce = builder.sauce;
-        this.topping = builder.topping;
-        this.price = builder.price;
     }
 
     @Override
