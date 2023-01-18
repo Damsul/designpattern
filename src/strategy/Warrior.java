@@ -1,4 +1,4 @@
-package Strategy;
+package strategy;
 
 public class Warrior extends Character {
     String jobClass = "전사";

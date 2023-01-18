@@ -1,4 +1,4 @@
-package Strategy.calculator;
+package strategy.calculator;
 
 public interface Calculator {
 

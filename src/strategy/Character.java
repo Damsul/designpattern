@@ -1,4 +1,4 @@
-package Strategy;
+package strategy;
 
 public abstract class Character {
     WeaponBehavior weaponBehavior;
