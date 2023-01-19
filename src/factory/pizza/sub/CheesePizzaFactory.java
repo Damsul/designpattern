@@ -1,7 +1,7 @@
-package factory.sub;
+package factory.pizza.sub;
 
-import factory.CheesePizza;
-import factory.Pizza;
+import factory.pizza.CheesePizza;
+import factory.pizza.Pizza;
 
 public class CheesePizzaFactory extends AbstractPizzaFactory {
 

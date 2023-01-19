@@ -1,6 +1,6 @@
-package factory;
+package factory.pizza;
 
-public class PotatoPizza implements Pizza {
+public class SweetPotatoPizza implements Pizza {
 
     @Override
     public void whatIsPizza() {

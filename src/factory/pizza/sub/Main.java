@@ -1,6 +1,6 @@
-package factory.sub;
+package factory.pizza.sub;
 
-import factory.Pizza;
+import factory.pizza.Pizza;
 
 public class Main {
 

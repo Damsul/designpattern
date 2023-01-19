@@ -1,4 +1,4 @@
-package factory;
+package factory.pizza;
 
 public class PizzaFactory {
     public Pizza createPizza(Topping topping) {
