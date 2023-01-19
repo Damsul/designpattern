@@ -1,6 +1,6 @@
 package builder.coffee.cafe;
 
-public class DefaultBeverageBuilder implements CoffeeBuilder {
+public class DefaultCoffeeBuilder implements CoffeeBuilder {
     private String base;
     private String liquid;
     private String syrup;

@@ -1,7 +1,7 @@
 package builder.pizza;
 
 // GOF Builder Pattern 과 Lombok builder ㅡ랑은 다름
-public class PizzaBuilder {
+public class Pizza {
 
     private final String name;
     private final String dough;
@@ -9,7 +9,7 @@ public class PizzaBuilder {
     private final String topping;
     private final int price;
 
-    public PizzaBuilder(Builder builder) {
+    public Pizza(Builder builder) {
         this.name = builder.name;
         this.dough = builder.dough;
         this.sauce = builder.sauce;
@@ -56,8 +56,8 @@ public class PizzaBuilder {
             return this;
         }
 
-        public PizzaBuilder build() {
-            return new PizzaBuilder(this);
+        public Pizza build() {
+            return new Pizza(this);
         }
     }
 

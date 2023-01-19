@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        PizzaBuilder pizza = new PizzaBuilder.Builder()
+        Pizza pizza = new Pizza.Builder()
             .name("불고기피자")
             .dough("thin")
             .sauce("hot")
