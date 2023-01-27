@@ -7,4 +7,6 @@ public interface FileSystem {
     int getSize();
 
     void info();
+
+    void rename(String name);
 }

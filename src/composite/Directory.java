@@ -43,5 +43,10 @@ public class Directory implements FileSystem {
         System.out.println();
     }
 
+    @Override
+    public void rename(String name) {
+        this.name = name;
+    }
+
 
 }

@@ -23,4 +23,9 @@ public class File implements FileSystem{
     public void info() {
         System.out.println("file name : " + this.name + ", file size : " + this.size);
     }
+
+    @Override
+    public void rename(String name) {
+        this.name = name;
+    }
 }

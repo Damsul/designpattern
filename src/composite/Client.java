@@ -25,10 +25,15 @@ public class Client {
         rootDir.add(dir2);
         rootDir.add(new File("read.me", 10));
 
-        System.out.println("rootDir size : " + rootDir.getSize());
-        System.out.println("rootDir name : " + rootDir.getName());
-        rootDir.info();
+//        System.out.println("rootDir size : " + rootDir.getSize());
+//        System.out.println("rootDir name : " + rootDir.getName());
+//        rootDir.info();
 
+        rootDir.rename("루트 디렉토리");
+        System.out.println(rootDir.getName());
+        file1.rename("삼공일오");
+        System.out.println(file1.getName());
+        dir1.info();
     }
 
 }
